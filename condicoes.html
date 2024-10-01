@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de condição</title>
+    <script>
+        const n1 = Number(prompt("digite a nota do primeiro bimestre:"))
+        const n2 = Number(prompt("digite a nota do segundo bimestre:"))        
+        const n3 = Number(prompt("digite a nota do terceiro bimestre:"))        
+        const n4 = Number(prompt("digite a nota do quarto bimestre:")) 
+
+        const soma = n1 + n2 + n3 + n4
+        const media = soma / 4
+
+        if(media >= 7){
+            console.log("aprovado!")
+        }
+            else if (media < 5){
+                console.log("Reprovado :(")
+        }   else{
+                console.log("recuperação, estude mais")
+            }
+
+
+
+
+ /*       
+        if(media >= 7){
+            console.log("a média é:" + media)
+            console.log("aprovado")
+            
+        }
+        else{
+            if(media < 5){
+                console.log("reprovado :(")
+             } else {
+                console.log("A media é: " + media)    
+                console.log("Recuperação, estude mais para passar.")    
+             }      
+        }
+*/
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

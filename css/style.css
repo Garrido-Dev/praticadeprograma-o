@@ -1,0 +1,40 @@
+
+body{
+    background-image: linear-gradient(rgb(100, 100, 240),rgb(185, 185, 105));
+    margin: auto 15%;
+}
+h1{
+    text-align: center;
+    color: #f60909;
+    background-color: aqua;
+    text-transform: uppercase;
+}
+
+.final{text-align: center;}
+.ama {text-align: center; color: white;background-color: red;}
+
+nav li{
+    display: inline;
+    color: red;
+    padding: 5px;
+    margin: left 20px;
+    font-weight: bolder;
+    border: solid red 2px;
+    margin-left: 20px;
+
+
+}
+nav {
+    float: right;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+}
+p1{
+    color: azure;
+}
+header{
+    background-color: blue;
+    padding: 10px;
+}
+main{margin: auto 30px;}

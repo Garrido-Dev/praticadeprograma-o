@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <script>
+        function somar(){
+            const n1 = document.getElementById("n1").value 
+            const n2 = document.getElementById("n2").value 
+            const soma = Number(n1) + Number(n2)
+            let resultado = document.getElementById("resultado")
+            resultado.innerHTML= "o resultado é: " + soma
+             }
+        
+        function subtracao(){
+            const n1 = document.getElementById("n1").value
+            const n2 = document.getElementById("n2").value 
+            const subtrair = Number(n1) - Number(n2)
+            resultado.innerHTML = "o resultado é: " + subtrair
+        }
+
+    </script>
+</head>
+<body>
+    numero:<input type="text" id="n1">
+    numero:<input type="text" id="n2">
+
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="subtrair" onclick="subtracao()">
+
+    <h1 id="resultado">o resultado é: </h1>
+</body>
+</html>
