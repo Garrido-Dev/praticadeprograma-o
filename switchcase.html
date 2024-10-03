@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <script>
+        const salario = prompt("Digite o valor do salário:")
+        const cargo = prompt("digite o cargo:")
+        let aumento = 0
+
+        switch(cargo){
+            case "estagiario": aumento= 1.8; break
+            case "analista": aumento= 1.5; break
+            case "gerente": aumento= 1.3; break
+            case "presidente": aumento= 1.1; break
+            default: console.log("por favor, digite um cargo!!")
+        }
+        const salarioNovo = salario * aumento
+        const novoSalario = salarioNovo.toFixed(2)
+        
+        console.log("o atual salario é: R$" + salario)
+        console.log("O novo salário será: R$" + novoSalario)
+
+        let mensagem = salarioNovo >= 5000 ? "valor ultrapassa o orçamento anual!!" : "Valor dentro do orçamento anual"
+        alert(mensagem)
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
