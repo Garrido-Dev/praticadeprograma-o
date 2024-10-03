@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FOR</title>
+    <script>
+        const qtd = prompt("digite a quantidade de bimestres: ")
+        let soma = 0
+        let nota = 0
+
+        for(contador = 1; contador <=qtd; contador++){
+            nota = Number(prompt("Digite a nota do " + contador + "º Bimestre" ))
+            soma = soma + nota 
+        
+        }
+            console.log(soma/qtd)
+    </script>
 </head>
 <body>
     
