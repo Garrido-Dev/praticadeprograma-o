@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste</title>
     <script>
-       
+        let contador = 1
+        const qtd= prompt("Digite quantos bimestres: ")
+        let soma = 0
+        let nota = 0
+
+        while(contador<=qtd){
+            do{nota = Number(prompt("digite a nota do " + contador + "º bimestre"))               
+            }while(nota >= 10)
+            contador++
+            soma = nota + soma
+        }
+
+        const media = soma/qtd
+        let mensagem = media <= 7 ? "REPROVADO!" : "APROVADO!"
+        console.log("media: " + media)
+        console.log(mensagem)
+        alert(mensagem)
+     
     </script>
 </head>
 <body>
