@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>eleitores</title>
+        <meta charset="UTF-8">
+        <Script>
+            
+            const anoVotacao = Number(prompt("Digite o ano da eleição: "))
+            const nascimento = Number(prompt("Digite sua data de nascimento: "))
+
+            let idade = anoVotacao - nascimento 
+
+            console.log(idade)
+
+            if (idade < 16){
+                console.log("Você não pode votar pois sua idade é menor que 16 anos")
+            } else if(idade >= 18 && idade < 65){
+                console.log("você é obrigado a votar")             
+            } else {
+                console.log("seu voto é facultativo pois você é sênior")
+            }
+
+            
+            
+
+        </Script>
+    </head>
+    <body>
+        
+    </body>
+</html>
