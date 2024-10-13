@@ -4,10 +4,10 @@ function calcular(operacao){
 
     let resultado
     switch(operacao){
-        case("+"): resultado = somar(n1,n2); break;
-        case("-"): resultado = subtrair(n1,n2); break;
-        case("*"): resultado = multi(n1,n2); break;
-        case("/"): resultado = dividir(n1,n2); break;
+        case('+'): resultado = somar(n1, n2); break;
+        case('-'): resultado = subtrair(n1, n2); break;
+        case('*'): resultado = multi(n1, n2); break;
+        case('/'): resultado = dividir(n1, n2); break;
     }
     document.getElementById("resultado").innerHTML = "o resultado é: " + resultado
     
@@ -23,7 +23,12 @@ function multi(n1, n2){
     return Number(n1) * Number(n2)
 }
 function dividir(n1, n2){
+    if(n2 == 0){
+        console.error("Não é possivel dividir")
+        return null
+    }else{
     return Number(n1) / Number(n2)
+    }
 }
 
 function chamarfuncao(){
