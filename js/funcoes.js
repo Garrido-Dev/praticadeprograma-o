@@ -1,36 +1,34 @@
-function somar(){
-    const n1 = Number(document.getElementById("n1").value)
-    const n2 = Number(document.getElementById("n2").value)
-    const soma = n1 + n2
-    document.getElementById("resultado").innerHTML = "o resultado é: " + soma
-}
-function subtrair(){
+function calcular(operacao){
     const n1 = document.getElementById("n1").value
     const n2 = document.getElementById("n2").value
-    const subtracao = n1-n2
-    resultado.innerHTML = "o resultado é: " + subtracao
+
+    let resultado
+    switch(operacao){
+        case("+"): resultado = somar(n1,n2); break;
+        case("-"): resultado = subtrair(n1,n2); break;
+        case("*"): resultado = multi(n1,n2); break;
+        case("/"): resultado = dividir(n1,n2); break;
+    }
+    document.getElementById("resultado").innerHTML = "o resultado é: " + resultado
+    
+
 }
-function multi(){
-    const n1 = document.getElementById("n1").value
-    const n2 = document.getElementById("n2").value
-    const multiplicar = n1*n2
-    resultado.innerHTML = "o resultado é: " + multiplicar
+function somar(n1, n2){
+    return Number(n1)+ Number(n2)
 }
-function dividir(){
-    const n1 = document.getElementById("n1").value
-    const n2 = document.getElementById("n2").value
-    const divisao = n1/n2
-    resultado.innerHTML = "o resultado é: " + divisao
+function subtrair(n1, n2){
+   return Number(n1) - Number(n2)
+}
+function multi(n1, n2){
+    return Number(n1) * Number(n2)
+}
+function dividir(n1, n2){
+    return Number(n1) / Number(n2)
 }
 
 function chamarfuncao(){
-    document.getElementById("apertar").innerHTML = "voce ganhou 1 milhão"
+    document.getElementById("apertar").innerHTML = "Você ganhou 1 milhão"
 }
 
-function calcular(n1, n2){
-    const resultado = n1 + n2
-    console.log(resultado)
-}
-calcular(50,30)
-calcular(90,10)
-calcular(10,100)
+
+
