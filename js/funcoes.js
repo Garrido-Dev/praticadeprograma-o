@@ -25,7 +25,7 @@ function multi(n1, n2){
 function dividir(n1, n2){
     if(n2 == 0){
         console.error("Não é possivel dividir")
-        return null
+        return "erro"
     }else{
     return Number(n1) / Number(n2)
     }
