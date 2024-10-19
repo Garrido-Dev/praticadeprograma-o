@@ -66,9 +66,8 @@ function checar(){
     for(let i=0;i<3;i++){
         let soma = 0
         soma = tabuleiro[i][0]+tabuleiro[i][1]+tabuleiro[i][2]
-
         if(soma == 3 || soma == -3){
-            aviso.innerHTML = "O jogador " + numerojogador() + " GANHOU!!"
+        aviso.innerHTML = "O jogador " + numerojogador() + " GANHOU!!"
         }
 
     }
